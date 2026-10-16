@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Packages | FDEXUN:TOUR</title>
+    <link rel="icon" href="./assets/images/fdexun-tour-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/main.js" defer></script>
+    <script src="./js/packages.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+          <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+          <span class="brand-text">FDEXUN:TOUR</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./packages.html" class="nav-link">Packages</a>
+          <a href="./locations.html" class="nav-link">Locations</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="./login.html" class="btn btn-secondary">Login</a>
+          <a href="./register.html" class="btn btn-primary">Create Account</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container page-banner-inner">
+          <span class="section-tag" style="background: rgba(255,255,255,0.12); color: white;">Handpicked journeys</span>
+          <h1>Travel packages designed for every kind of explorer.</h1>
+          <p>Choose by mood, destination or budget and build a trip that feels effortless from day one.</p>
+        </div>
+      </section>
+
+      <section class="section page-intro">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Browse trips</span>
+            <h2>Find your perfect getaway.</h2>
+            <p>Explore premium escapes with carefully planned experiences and flexible pricing.</p>
+          </div>
+
+          <div class="filter-shell">
+            <div class="mobile-filter-header">
+              <button type="button" id="mobile-filter-toggle" class="mobile-filter-toggle">Filters</button>
+            </div>
+
+            <div class="filter-panel" id="filter-panel">
+              <div class="filter-grid" aria-label="Package filters">
+                <div class="filter-field">
+                  <label for="country-filter">Country</label>
+                  <select id="country-filter">
+                    <option value="All Countries">All Countries</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="state-filter">State / Region</label>
+                  <select id="state-filter">
+                    <option value="All States">All States</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="budget-filter">Budget</label>
+                  <select id="budget-filter">
+                    <option value="All">All Budgets</option>
+                    <option value="under-10000">Under ₹10,000</option>
+                    <option value="10000-25000">₹10,000–₹25,000</option>
+                    <option value="25000-50000">₹25,000–₹50,000</option>
+                    <option value="50000-100000">₹50,000–₹1,00,000</option>
+                    <option value="100000-plus">₹1,00,000+</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="duration-filter">Duration</label>
+                  <select id="duration-filter">
+                    <option value="All">All Durations</option>
+                    <option value="1-3">1–3 Days</option>
+                    <option value="4-7">4–7 Days</option>
+                    <option value="8-14">8–14 Days</option>
+                    <option value="15-30">15–30 Days</option>
+                    <option value="30-plus">30+ Days</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="travel-type-filter">Travel Type</label>
+                  <select id="travel-type-filter">
+                    <option value="All">All Types</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Family">Family</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Solo">Solo</option>
+                    <option value="Group">Group</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Budget">Budget</option>
+                    <option value="Backpacking">Backpacking</option>
+                    <option value="Business">Business</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Honeymoon">Honeymoon</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="destination-type-filter">Destination Type</label>
+                  <select id="destination-type-filter">
+                    <option value="All">All Destinations</option>
+                    <option value="Mountains">Mountains</option>
+                    <option value="Beaches">Beaches</option>
+                    <option value="Cities">Cities</option>
+                    <option value="Wildlife">Wildlife</option>
+                    <option value="Desert">Desert</option>
+                    <option value="Forest">Forest</option>
+                    <option value="Islands">Islands</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Religious">Religious</option>
+                    <option value="Snow">Snow</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="rating-filter">Rating</label>
+                  <select id="rating-filter">
+                    <option value="All">All Ratings</option>
+                    <option value="4.5">4.5+ ⭐</option>
+                    <option value="4.0">4.0+ ⭐</option>
+                    <option value="3.5">3.5+ ⭐</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="activities-filter">Activities</label>
+                  <select id="activities-filter">
+                    <option value="All">All Activities</option>
+                    <option value="Trekking">Trekking</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Hiking">Hiking</option>
+                    <option value="Scuba Diving">Scuba Diving</option>
+                    <option value="Skiing">Skiing</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Sightseeing">Sightseeing</option>
+                    <option value="Water Sports">Water Sports</option>
+                    <option value="Rafting">Rafting</option>
+                    <option value="Photography">Photography</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="features-filter">Package Features</label>
+                  <select id="features-filter">
+                    <option value="All">All Features</option>
+                    <option value="Hotel Included">Hotel Included</option>
+                    <option value="Flights Included">Flights Included</option>
+                    <option value="Meals Included">Meals Included</option>
+                    <option value="Airport Transfer">Airport Transfer</option>
+                    <option value="Guide Included">Guide Included</option>
+                    <option value="Travel Insurance">Travel Insurance</option>
+                  </select>
+                </div>
+
+                <div class="filter-field">
+                  <label for="sort-filter">Sort By</label>
+                  <select id="sort-filter">
+                    <option value="recommended">Recommended</option>
+                    <option value="price-asc">Price: Low → High</option>
+                    <option value="price-desc">Price: High → Low</option>
+                    <option value="rating-desc">Rating: High → Low</option>
+                    <option value="duration-asc">Duration: Short → Long</option>
+                    <option value="duration-desc">Duration: Long → Short</option>
+                    <option value="newest">Newest Packages</option>
+                  </select>
+                </div>
+
+                <div class="filter-field search-field">
+                  <label for="package-search">Search</label>
+                  <div class="search-inline">
+                    <i class='bx bx-search'></i>
+                    <input id="package-search" type="search" placeholder="Search packages or cities" aria-label="Search packages" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="package-grid" class="package-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+            <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+            <span class="brand-text" style="color: white;">FDEXUN:TOUR</span>
+          </a>
+          <p>Travel beautifully with personalized routes, trusted support, and unforgettable stays.</p>
+        </div>
+        <div>
+          <div class="footer-title">Reviews</div>
+          <div class="footer-links">
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./locations.html">Popular destinations</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Support</div>
+          <div class="footer-links">
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Create account</a>
+            <a href="mailto:vyronyx006@gmail.com">vyronyx006@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-title">Office</div>
+          <p>Vadodara, Gujarat, India</p>
+          <p>+91 63538 25125</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="current-year"></span> Rajput Parth. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

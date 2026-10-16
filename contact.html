@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | FDEXUN:TOUR</title>
+    <link rel="icon" href="./assets/images/fdexun-tour-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+          <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+          <span class="brand-text">FDEXUN:TOUR</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./packages.html" class="nav-link">Packages</a>
+          <a href="./locations.html" class="nav-link">Locations</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="./login.html" class="btn btn-secondary">Login</a>
+          <a href="./register.html" class="btn btn-primary">Create Account</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container page-banner-inner">
+          <span class="section-tag" style="background: rgba(255,255,255,0.12); color: white;">Reach out</span>
+          <h1>Tell us where you want to go next.</h1>
+          <p>Our travel advisors are ready to help you plan the perfect escape.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <div class="section-tag">Contact details</div>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="icon"><i class='bx bx-map'></i></div>
+                <div>
+                  <strong>Address</strong>
+                  <p>Vadodara, Gujarat, India</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class='bx bx-phone'></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+91 63538 25125</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class='bx bx-envelope'></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <p>vyronyx006@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="section-tag">Send a message</div>
+            <form id="contact-form" class="form-stack" style="margin-top: 18px;">
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Your full name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" type="tel" placeholder="Your phone number" required />
+                </div>
+                <div class="field">
+                  <label for="trip-type">Trip type</label>
+                  <select id="trip-type">
+                    <option>Holiday</option>
+                    <option>Honeymoon</option>
+                    <option>Family getaway</option>
+                    <option>FDEXUN: TOUR tour</option>
+                    <option>Corporate travel</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell us about your travel plans" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send request</button>
+              <div id="contact-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+            <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+            <span class="brand-text" style="color: white;">FDEXUN:TOUR</span>
+          </a>
+          <p>Travel support for flights, stays, packages and personalized itineraries.</p>
+        </div>
+        <div>
+          <div class="footer-title">Explore</div>
+          <div class="footer-links">
+            <a href="./packages.html">Packages</a>
+            <a href="./locations.html">Locations</a>
+            <a href="./about.html">About us</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Connect</div>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/r.parth._06/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rajput-parth-a90a53328/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://x.com/Rajputparth06" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/parth.krishna.904" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://github.com/rparth006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-title">Office</div>
+          <p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+          <p>+91 63538 25125</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="current-year"></span> Rajput Parth. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

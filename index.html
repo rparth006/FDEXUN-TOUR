@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FDEXUN:TOUR is a professional travel website featuring curated holidays, popular destinations, and seamless trip planning."
+    />
+    <title>FDEXUN:TOUR | Travel smarter</title>
+    <link rel="icon" href="./assets/images/fdexun-tour-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+          <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+          <span class="brand-text">FDEXUN:TOUR</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./packages.html" class="nav-link">Packages</a>
+          <a href="./locations.html" class="nav-link">Locations</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="./login.html" class="btn btn-secondary">Login</a>
+          <a href="./register.html" class="btn btn-primary">Create Account</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <div class="section-tag">Tailored escapes</div>
+            <h1>FDEXUN: TOUR starts with a smart plan.</h1>
+            <p>
+              Discover affordable luxury, handpicked destinations, and curated travel experiences built for
+              modern explorers.
+            </p>
+            <div class="hero-actions">
+              <a href="./packages.html" class="btn btn-primary">Explore packages</a>
+              <a href="#discover" class="btn btn-light">Why choose us</a>
+            </div>
+          </div>
+
+          <aside class="search-card" aria-label="Travel search panel">
+            <h3>Plan your next getaway</h3>
+            <form id="hero-search">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="trip-location">Where to?</label>
+                  <input id="trip-location" type="text" placeholder="Enter destination" />
+                </div>
+                <div class="field">
+                  <label for="trip-date">Travel date</label>
+                  <input id="trip-date" type="date" />
+                </div>
+                <div class="field">
+                  <label for="budget-range">Max budget</label>
+                  <div class="slider-wrap">
+                    <div class="slider-row">
+                      <span>Budget</span>
+                      <strong id="budget-value">₹25,000</strong>
+                    </div>
+                    <input id="budget-range" type="range" min="10000" max="200000" step="5000" value="25000" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Search trips</button>
+                <div id="form-status" class="form-status" aria-live="polite"></div>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section id="discover" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Why FDEXUN:TOUR</span>
+            <h2>Everything you need for a confident journey.</h2>
+            <p>
+              We blend local expertise, easy planning, and best-value experiences into one trusted travel experience.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="feature-card">
+              <h3>Flight booking</h3>
+              <p>Flexible schedules and competitive fares for both domestic and international routes.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Handpicked stays</h3>
+              <p>Comfortable stays selected for location, quality, and experience-rich travel moments.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Smart itineraries</h3>
+              <p>Thoughtful trip plans that balance culture, scenery, food, and downtime.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Support on call</h3>
+              <p>Real assistance before and during your trip so every detail feels organized and safe.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section subsection">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Popular escapes</span>
+            <h2>Best-selling journeys for every style.</h2>
+          </div>
+
+          <div class="package-grid">
+            <article class="package-card">
+              <div class="package-image">
+                <img src="./assets/files/l1.jpg" alt="Kashmir winter getaway" />
+                <span class="package-badge">FDEXUN: TOUR</span>
+              </div>
+              <div class="package-content">
+                <div class="package-meta">
+                  <div>
+                    <h3>Kashmir Escape</h3>
+                    <p>Srinagar, India</p>
+                  </div>
+                  <span class="package-price">₹24,999</span>
+                </div>
+                <div class="package-rating">★★★★★ 4.9</div>
+                <div class="package-list">
+                  <span class="package-tag">Snow</span>
+                  <span class="package-tag">Houseboat</span>
+                  <span class="package-tag">Food</span>
+                </div>
+                <p>Enjoy snow-dusted landscapes, heritage stays, and memorable shikara rides.</p>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-image">
+                <img src="./assets/files/l4.jpg" alt="Bali island retreat" />
+                <span class="package-badge">Beach</span>
+              </div>
+              <div class="package-content">
+                <div class="package-meta">
+                  <div>
+                    <h3>Bali Retreat</h3>
+                    <p>Ubud, Indonesia</p>
+                  </div>
+                  <span class="package-price">₹42,999</span>
+                </div>
+                <div class="package-rating">★★★★★ 4.8</div>
+                <div class="package-list">
+                  <span class="package-tag">Beach</span>
+                  <span class="package-tag">Spa</span>
+                  <span class="package-tag">Sunset</span>
+                </div>
+                <p>From cliffside views to beach clubs, Bali offers the perfect island rhythm.</p>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-image">
+                <img src="./assets/files/l5.jpg" alt="Dubai skyline journey" />
+                <span class="package-badge">Luxury</span>
+              </div>
+              <div class="package-content">
+                <div class="package-meta">
+                  <div>
+                    <h3>Dubai Skyline</h3>
+                    <p>Dubai, UAE</p>
+                  </div>
+                  <span class="package-price">₹57,999</span>
+                </div>
+                <div class="package-rating">★★★★★ 5.0</div>
+                <div class="package-list">
+                  <span class="package-tag">Luxury</span>
+                  <span class="package-tag">Desert</span>
+                  <span class="package-tag">City</span>
+                </div>
+                <p>Skyline views, desert FDEXUN: TOURs, and indulgent experiences in the UAE.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section subsection">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Destinations</span>
+            <h2>Trending places to explore next.</h2>
+          </div>
+          <div class="location-grid">
+            <article class="location-card">
+              <div class="location-visual"><img src="./assets/files/l2.jpg" alt="Istanbul" /></div>
+              <div class="location-content">
+                <div class="meta"><span>Istanbul</span><strong>Turkey</strong></div>
+                <h3>Two continents, one unforgettable city.</h3>
+                <p>Historic bazaars, skyline views, and food culture rooted in centuries of tradition.</p>
+              </div>
+            </article>
+            <article class="location-card">
+              <div class="location-visual"><img src="./assets/files/l3.jpg" alt="Paris" /></div>
+              <div class="location-content">
+                <div class="meta"><span>Paris</span><strong>France</strong></div>
+                <h3>Paris is where romance meets design.</h3>
+                <p>Walk the boulevards, enjoy fine dining, and discover timeless elegance.</p>
+              </div>
+            </article>
+            <article class="location-card">
+              <div class="location-visual"><img src="./assets/files/l7.jpg" alt="Port Blair" /></div>
+              <div class="location-content">
+                <div class="meta"><span>Port Blair</span><strong>India</strong></div>
+                <h3>Island calm, sea breeze, and coastal wonder.</h3>
+                <p>Explore turquoise waters, serene beaches, and rich island heritage.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-banner">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h3>Need help planning a custom holiday?</h3>
+              <p>Tell us your destination, travel style and budget. We’ll build a trip around you.</p>
+            </div>
+            <a href="./contact.html" class="btn btn-light">Talk to an advisor</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+            <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+            <span class="brand-text" style="color: white;">FDEXUN:TOUR</span>
+          </a>
+          <p>Professional travel planning for meaningful escapes, luxury stays, and unforgettable experiences.</p>
+        </div>
+
+        <div>
+          <div class="footer-title">Quick links</div>
+          <div class="footer-links">
+            <a href="./packages.html">Packages</a>
+            <a href="./locations.html">Locations</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Support</div>
+          <div class="footer-links">
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Create account</a>
+            <a href="mailto:vyronyx006@gmail.com">vyronyx006@gmail.com</a>
+            <a href="tel:+916353825125">+91 63538 25125</a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <div class="footer-title">Office</div>
+          <p>Vadodara, Gujarat, India</p>
+          <p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="current-year"></span> Rajput Parth. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
+
+                    plan a vacation on your own, you should check out India tours for Kashmir to help you with an
+                    unforgettable holiday. With the right all India tour packages, you can discover lush green
+                    valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab,
+                    Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind
+                    handicrafts for your loved ones. <br>
+                    <br> <b> Best Time to Visit:</b> March to August <br>
+
+                    <br> Best Places to Visit: <br>
+                <ul class="loc-detail">
+                    <li>Gulmarg</li>
+                    <li> Srinagar</li>
+                    <li> Dal Lake</li>
+                    <li> Sonamarg</li>
+                    <li> Indira Gandhi Tulip Garden</li>
+                </ul>
+                <br>
+                <br> These places should be included in the best tour packages for Kashmir. Find travel packages to
+                suit all needs and you can also find exquisite honeymoon packages, since Kashmir is an ethereal
+                destination for a picture-perfect Indian honeymoon.</p>
+            </div>
+
+            <div class="box">
+                <h1>Sikkim</h1>
+                <p>If you are looking for an Indian destination that is fit for a world tour package, then look no
+                    further than Sikkim. You can plan amazing India tours to this mountain marvel, which is home to
+                    the country's highest peak, Kanchenjunga. It is certainly a great destination for quality
+                    international tour packages. Check out Sikkim tour packages for a trip to this charming Indian
+                    state. <br>
+                    <br> <b>Best Time to Visit:</b> March to May <br>
+
+                    <br> Best Places to Visit:
+                <ul class="loc-detail">
+                    <li> Gangtok</li>
+                    <li> Nathu La Pass</li>
+                    <li> Tsomgo Lake</li>
+                    <li> Rumtek Monastery</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="box">
+                <h1>Shimla</h1>
+                <p> Shimla, the Queen of the Hills, is the stuff that dreamy India tours are made of! Shimla is a
+                    great
+                    destination for international honeymoon packages, with its pristine landscape, mountains,
+                    greenery
+                    and romantic weather. A Shimla tour also means checking out the delightful cafes and eateries
+                    here. <br>
+
+                    <br> <b>Best Time to Visit:</b> May to June/December to January <br>
+
+                    <br> Best Places to Visit:
+                <ul class="loc-detail">
+                    <li>The Ridge</li>
+                    <li> Green Valley</li>
+                    <li> Mall Road</li>
+                    <li> Jakhoo Hill</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="box">
+                <h1> Uttarakhand</h1>
+                <p> There are many India tours which keep Uttarakhand at the forefront and why not? The state is
+                    blessed with unmatched natural beauty. Find Uttarakhand tour packages covering several popular
+                    destinations. The state offers the right mix of spirituality, trekking, FDEXUN: TOUR, beautiful
+                    mountain landscapes and welcoming locals. <br>
+
+                    <br> <b> Best time to visit:</b> March to April/September to October <br>
+
+                    <br> Best places to visit:
+                <ul class="loc-detail">
+                    <li> Dehradun</li>
+                    <li> Mussoorie</li>
+                    <li> Nainital</li>
+                    <li> Auli</li>
+                    <li> Rishikesh</li>
+                </ul>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+
+        <div class="container2">
+            <style>
+                .container2 {
+                    position: relative;
+                    grid-template-columns: auto auto auto;
+                    gap: 5%;
+                    padding: 35px;
+                    margin-top: 50px;
+                    margin-left: 35px;
+                    margin-right: 34px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    color: black;
+                    background-color: white;
+                    box-shadow: 5px 5px 10px #3b3737;
+                }
+            </style>
+
+            <div> <br>
+                <h1 class="faqh1">FAQs - Frequently Asked Questions</h1>
+            </div>
+
+            <p><br>
+            <h3> What kind of destinations can I choose for travelling?</h3> <br>
+            <p> You can choose any destination for travel as per your mood. For an action-packed holiday, you can choose
+                wildlife, trekking and other adventurous destinations. For a romantic holiday with your special someone,
+                you can choose from a range of couple-friendly destinations. You can also choose the kind of holiday you
+                want based on the destination you like—whether hills, mountains, beaches, heritage or pilgrimage sites.
+            </p><br>
+            <hr>
+
+            <br>
+            <h3> Can I opt for a budget-friendly holiday?</h3><br>
+            <p>
+                Yes, you can. All you have to do is set an approximate expenditure amount in your mind before starting
+                exploring the ideas here. You can search for a suitable destination for your travel in any range from
+                Rs. 10,000 to Rs. 50,000. It is advisable to make all the bookings in advance in order to avoid change
+                in prices.</p><br>
+            <hr>
+
+            <br>
+            <h3> Which time of the year is best suited for booking a holiday?</h3><br>
+            <p>x
+                Holidays can be booked throughout the year. You only need to select the month in which you are planning
+                to travel. Our curated list of ideas is designed in such a way that you will be able to see only those
+                destinations which are most suitable for that particular month of the year. If you select a combination
+                of filters defining your month, budget and purpose of travel, you will get the appropriate destination
+                name and other details.</p><br>
+            <hr>
+
+            <br>
+            <h3>What all will I get in a holiday idea?</h3>
+            <p>Once you choose a destination, it will give you complete details of all the unique things about that
+                place that must not be missed, including most visited local sites, best places to stay and all the
+                memorable experiences that you can indulge in. You will be given multiple options of hotels, resorts and
+                guest houses to choose from depending on your budget. </p> <br>
+            <hr>
+            </p>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+        <div class="newstext">
+            <h2>Newsletter</h2>
+            <p>Subscribe to get offers and latest<br>updates every week!</p>
+        </div>
+
+        <div class="send">
+            <form action="">
+                <input type="email" name="emailid" placeholder="E-mail" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./booking.html">Register</a></li>
+                        <li><a href="./info.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.instagram.com/r.parth._06/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/rajput-parth-a90a53328/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://x.com/Rajputparth06" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.facebook.com/parth.krishna.904" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://github.com/rparth006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p></p>
+        </div>
+    </section>
+ <SCRIPT type="text/javascript">
+        function JavaBlink() {
+           var blinks = document.getElementsByTagName('JavaBlink');
+           for (var i = blinks.length - 1; i >= 0; i--) {
+              var s = blinks[i];
+              s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+           }
+           window.setTimeout(JavaBlink, 500);
+        }
+        if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+        else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+        else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+        else window.onload = JavaBlink;
+      </SCRIPT>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account | FDEXUN:TOUR</title>
+    <link rel="icon" href="./assets/images/fdexun-tour-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./js/auth.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
+          <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+          <span class="brand-text">FDEXUN:TOUR</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./packages.html" class="nav-link">Packages</a>
+          <a href="./locations.html" class="nav-link">Locations</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="./login.html" class="btn btn-secondary">Login</a>
+          <a href="./register.html" class="btn btn-primary">Create Account</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="container auth-layout">
+        <section class="auth-panel" aria-labelledby="register-title">
+          <div class="auth-brand" aria-label="FDEXUN:TOUR brand">
+            <span class="auth-brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
+            <span class="auth-brand-text">FDEXUN:TOUR</span>
+          </div>
+          <div class="section-tag">Frontend demo</div>
+          <h1 id="register-title">Create your account</h1>
+          <p>Demo-only registration powered by localStorage. No backend is used.</p>
+
+          <form id="register-form" novalidate>
+            <div class="field">
+              <label for="register-name">Full name</label>
+              <input id="register-name" type="text" placeholder="Jane Smith" required />
+            </div>
+            <div class="field">
+              <label for="register-email">Email</label>
+              <input id="register-email" type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="field">
+              <label for="register-password">Password</label>
+              <input id="register-password" type="password" placeholder="Create a password" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Create account</button>
+            <div id="register-message" class="auth-message" aria-live="polite"></div>
+          </form>
+
+          <p class="auth-links">Already registered? <a href="./login.html">Login here</a></p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
