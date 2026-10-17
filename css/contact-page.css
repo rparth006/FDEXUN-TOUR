@@ -1,0 +1,42 @@
+.contact-page .contact-footer .footer-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.contact-page .contact-footer .footer-brand .brand {
+  margin-bottom: 20px;
+}
+
+.contact-page .contact-footer .footer-title {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.contact-page .contact-footer .footer-brand p,
+.contact-page .contact-footer .footer-info p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+
+.contact-page .contact-footer .footer-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-page .contact-footer .footer-info a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .contact-page .contact-footer .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-page .contact-footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

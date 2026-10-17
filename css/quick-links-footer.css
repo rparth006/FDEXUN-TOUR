@@ -1,0 +1,104 @@
+.quick-links-footer {
+  margin-top: 0;
+  padding: 36px 24px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: #08090b;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.quick-links-footer .foot {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.quick-links-footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 40px;
+  justify-content: initial;
+}
+
+.quick-links-footer .footlinks h4 {
+  position: static;
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.quick-links-footer .footlinks h4::before {
+  display: none;
+}
+
+.quick-links-footer .footlinks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quick-links-footer .footlinks ul li {
+  margin: 0 0 10px;
+}
+
+.quick-links-footer .footlinks ul li a {
+  display: inline-flex;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.quick-links-footer .footlinks ul li a:hover {
+  color: #fff;
+  transform: none;
+}
+
+.quick-links-footer .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quick-links-footer .social a {
+  display: inline-flex;
+  width: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.quick-links-footer .social a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.quick-links-footer .social a i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.quick-links-footer .end {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .quick-links-footer {
+    padding: 30px 20px 24px;
+  }
+
+  .quick-links-footer .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -544,9 +544,30 @@ function bindFilterEvents() {
 
   if (mobileFilterToggle && filterPanel) {
     mobileFilterToggle.addEventListener('click', () => {
-      const isOpen = filterPanel.classList.toggle('open');
+      const isOpen = !filterPanel.classList.contains('open');
+      filterPanel.classList.toggle('open', isOpen);
+      filterPanel.setAttribute('aria-hidden', String(!isOpen));
       mobileFilterToggle.setAttribute('aria-expanded', String(isOpen));
-      mobileFilterToggle.textContent = isOpen ? 'Hide filters' : 'Filters';
+      mobileFilterToggle.setAttribute('aria-label', isOpen ? 'Close package filters' : 'Open package filters');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!filterPanel.contains(event.target) && !mobileFilterToggle.contains(event.target)) {
+        filterPanel.classList.remove('open');
+        filterPanel.setAttribute('aria-hidden', 'true');
+        mobileFilterToggle.setAttribute('aria-expanded', 'false');
+        mobileFilterToggle.setAttribute('aria-label', 'Open package filters');
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && filterPanel.classList.contains('open')) {
+        filterPanel.classList.remove('open');
+        filterPanel.setAttribute('aria-hidden', 'true');
+        mobileFilterToggle.setAttribute('aria-expanded', 'false');
+        mobileFilterToggle.setAttribute('aria-label', 'Open package filters');
+        mobileFilterToggle.focus();
+      }
     });
   }
 }

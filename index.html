@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/quick-links-footer.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -130,7 +131,7 @@
             <h2>Best-selling journeys for every style.</h2>
           </div>
 
-          <div class="package-grid">
+          <div class="package-grid" id="package">
             <article class="package-card">
               <div class="package-image">
                 <img src="./assets/files/l1.jpg" alt="Kashmir winter getaway" />
@@ -196,14 +197,14 @@
                   <span class="package-tag">Desert</span>
                   <span class="package-tag">City</span>
                 </div>
-                <p>Skyline views, desert FDEXUN: TOURs, and indulgent experiences in the UAE.</p>
+                <p>Skyline views, desert safaris, and indulgent experiences in the UAE.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section subsection">
+      <section class="section subsection" id="locations">
         <div class="container">
           <div class="section-header">
             <span class="section-tag">Destinations</span>
@@ -238,6 +239,60 @@
         </div>
       </section>
 
+      <section class="section subsection">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">India escapes</span>
+            <h2>Find your next mountain getaway.</h2>
+            <p>Explore more of India's mountain destinations with practical seasonal guidance.</p>
+          </div>
+          <div class="regional-grid">
+            <article class="info-card">
+              <h3>Sikkim</h3>
+              <p>Plan a mountain escape around Gangtok, Nathu La Pass, Tsomgo Lake, and Rumtek Monastery.</p>
+              <p><strong>Best time to visit:</strong> March to May.</p>
+            </article>
+            <article class="info-card">
+              <h3>Shimla</h3>
+              <p>Discover the Ridge, Green Valley, Mall Road, and Jakhoo Hill in the Queen of the Hills.</p>
+              <p><strong>Best time to visit:</strong> May to June or December to January.</p>
+            </article>
+            <article class="info-card">
+              <h3>Uttarakhand</h3>
+              <p>Explore Dehradun, Mussoorie, Nainital, Auli, and Rishikesh across mountain and riverside stays.</p>
+              <p><strong>Best time to visit:</strong> March to April or September to October.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section subsection" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Travel planning</span>
+            <h2>Frequently asked questions.</h2>
+          </div>
+          <div class="faq-grid">
+            <article class="info-card">
+              <h3>What kinds of destinations can I choose?</h3>
+              <p>Choose from mountains, beaches, heritage sites, pilgrimage destinations, wildlife, or activity-focused trips.</p>
+            </article>
+            <article class="info-card">
+              <h3>Can I plan a budget-friendly holiday?</h3>
+              <p>Yes. Set a budget first, compare options, and check current prices before making any booking.</p>
+            </article>
+            <article class="info-card">
+              <h3>When should I book a holiday?</h3>
+              <p>Travel throughout the year. The best time depends on your destination, preferred activities, and current conditions.</p>
+            </article>
+            <article class="info-card">
+              <h3>What information do package listings provide?</h3>
+              <p>Listings show destination, duration, price, and package highlights. Confirm availability and final terms before booking.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section cta-banner">
         <div class="container">
           <div class="cta-box">
@@ -251,258 +306,29 @@
       </section>
 
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a href="./index.html" class="brand" aria-label="FDEXUN:TOUR home">
-            <span class="brand-mark"><img src="./assets/images/fdexun-tour-logo.svg" alt="FDEXUN:TOUR logo" /></span>
-            <span class="brand-text" style="color: white;">FDEXUN:TOUR</span>
-          </a>
-          <p>Professional travel planning for meaningful escapes, luxury stays, and unforgettable experiences.</p>
-        </div>
-
-        <div>
-          <div class="footer-title">Quick links</div>
-          <div class="footer-links">
-            <a href="./packages.html">Packages</a>
-            <a href="./locations.html">Locations</a>
-            <a href="./about.html">About us</a>
-            <a href="./contact.html">Contact</a>
+    <footer class="quick-links-footer">
+      <div class="foot">
+        <div class="footer-content">
+          <div class="footlinks">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./register.html">Register</a></li>
+              <li><a href="./info.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
           </div>
-        </div>
-
-        <div>
-          <div class="footer-title">Support</div>
-          <div class="footer-links">
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Create account</a>
-            <a href="mailto:vyronyx006@gmail.com">vyronyx006@gmail.com</a>
-            <a href="tel:+916353825125">+91 63538 25125</a>
+          <div class="footlinks">
+            <h4>Connect</h4>
+            <div class="social">
+              <a href="https://www.instagram.com/r.parth._06/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/rajput-parth-a90a53328/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+              <a href="https://x.com/Rajputparth06" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="bx bxl-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/parth.krishna.904" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/rparth006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+            </div>
           </div>
-        </div>
-
-        <div class="footer-info">
-          <div class="footer-title">Office</div>
-          <p>Vadodara, Gujarat, India</p>
-          <p>Mon-Sun: 8:00 AM - 9:00 PM</p>
         </div>
       </div>
-      <div class="footer-bottom">© <span id="current-year"></span> Rajput Parth. All rights reserved.</div>
     </footer>
   </body>
-</html>
-
-                    plan a vacation on your own, you should check out India tours for Kashmir to help you with an
-                    unforgettable holiday. With the right all India tour packages, you can discover lush green
-                    valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab,
-                    Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind
-                    handicrafts for your loved ones. <br>
-                    <br> <b> Best Time to Visit:</b> March to August <br>
-
-                    <br> Best Places to Visit: <br>
-                <ul class="loc-detail">
-                    <li>Gulmarg</li>
-                    <li> Srinagar</li>
-                    <li> Dal Lake</li>
-                    <li> Sonamarg</li>
-                    <li> Indira Gandhi Tulip Garden</li>
-                </ul>
-                <br>
-                <br> These places should be included in the best tour packages for Kashmir. Find travel packages to
-                suit all needs and you can also find exquisite honeymoon packages, since Kashmir is an ethereal
-                destination for a picture-perfect Indian honeymoon.</p>
-            </div>
-
-            <div class="box">
-                <h1>Sikkim</h1>
-                <p>If you are looking for an Indian destination that is fit for a world tour package, then look no
-                    further than Sikkim. You can plan amazing India tours to this mountain marvel, which is home to
-                    the country's highest peak, Kanchenjunga. It is certainly a great destination for quality
-                    international tour packages. Check out Sikkim tour packages for a trip to this charming Indian
-                    state. <br>
-                    <br> <b>Best Time to Visit:</b> March to May <br>
-
-                    <br> Best Places to Visit:
-                <ul class="loc-detail">
-                    <li> Gangtok</li>
-                    <li> Nathu La Pass</li>
-                    <li> Tsomgo Lake</li>
-                    <li> Rumtek Monastery</li>
-                </ul>
-                </p>
-            </div>
-
-            <div class="box">
-                <h1>Shimla</h1>
-                <p> Shimla, the Queen of the Hills, is the stuff that dreamy India tours are made of! Shimla is a
-                    great
-                    destination for international honeymoon packages, with its pristine landscape, mountains,
-                    greenery
-                    and romantic weather. A Shimla tour also means checking out the delightful cafes and eateries
-                    here. <br>
-
-                    <br> <b>Best Time to Visit:</b> May to June/December to January <br>
-
-                    <br> Best Places to Visit:
-                <ul class="loc-detail">
-                    <li>The Ridge</li>
-                    <li> Green Valley</li>
-                    <li> Mall Road</li>
-                    <li> Jakhoo Hill</li>
-                </ul>
-                </p>
-            </div>
-
-            <div class="box">
-                <h1> Uttarakhand</h1>
-                <p> There are many India tours which keep Uttarakhand at the forefront and why not? The state is
-                    blessed with unmatched natural beauty. Find Uttarakhand tour packages covering several popular
-                    destinations. The state offers the right mix of spirituality, trekking, FDEXUN: TOUR, beautiful
-                    mountain landscapes and welcoming locals. <br>
-
-                    <br> <b> Best time to visit:</b> March to April/September to October <br>
-
-                    <br> Best places to visit:
-                <ul class="loc-detail">
-                    <li> Dehradun</li>
-                    <li> Mussoorie</li>
-                    <li> Nainital</li>
-                    <li> Auli</li>
-                    <li> Rishikesh</li>
-                </ul>
-                </p>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-
-        <div class="container2">
-            <style>
-                .container2 {
-                    position: relative;
-                    grid-template-columns: auto auto auto;
-                    gap: 5%;
-                    padding: 35px;
-                    margin-top: 50px;
-                    margin-left: 35px;
-                    margin-right: 34px;
-                    border-radius: 10px;
-                    font-size: 12px;
-                    color: black;
-                    background-color: white;
-                    box-shadow: 5px 5px 10px #3b3737;
-                }
-            </style>
-
-            <div> <br>
-                <h1 class="faqh1">FAQs - Frequently Asked Questions</h1>
-            </div>
-
-            <p><br>
-            <h3> What kind of destinations can I choose for travelling?</h3> <br>
-            <p> You can choose any destination for travel as per your mood. For an action-packed holiday, you can choose
-                wildlife, trekking and other adventurous destinations. For a romantic holiday with your special someone,
-                you can choose from a range of couple-friendly destinations. You can also choose the kind of holiday you
-                want based on the destination you like—whether hills, mountains, beaches, heritage or pilgrimage sites.
-            </p><br>
-            <hr>
-
-            <br>
-            <h3> Can I opt for a budget-friendly holiday?</h3><br>
-            <p>
-                Yes, you can. All you have to do is set an approximate expenditure amount in your mind before starting
-                exploring the ideas here. You can search for a suitable destination for your travel in any range from
-                Rs. 10,000 to Rs. 50,000. It is advisable to make all the bookings in advance in order to avoid change
-                in prices.</p><br>
-            <hr>
-
-            <br>
-            <h3> Which time of the year is best suited for booking a holiday?</h3><br>
-            <p>x
-                Holidays can be booked throughout the year. You only need to select the month in which you are planning
-                to travel. Our curated list of ideas is designed in such a way that you will be able to see only those
-                destinations which are most suitable for that particular month of the year. If you select a combination
-                of filters defining your month, budget and purpose of travel, you will get the appropriate destination
-                name and other details.</p><br>
-            <hr>
-
-            <br>
-            <h3>What all will I get in a holiday idea?</h3>
-            <p>Once you choose a destination, it will give you complete details of all the unique things about that
-                place that must not be missed, including most visited local sites, best places to stay and all the
-                memorable experiences that you can indulge in. You will be given multiple options of hotels, resorts and
-                guest houses to choose from depending on your budget. </p> <br>
-            <hr>
-            </p>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-
-    <section class="newsletter">
-        <div class="newstext">
-            <h2>Newsletter</h2>
-            <p>Subscribe to get offers and latest<br>updates every week!</p>
-        </div>
-
-        <div class="send">
-            <form action="">
-                <input type="email" name="emailid" placeholder="E-mail" required>
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-
-    <section class="footer">
-        <div class="foot">
-            <div class="footer-content">
-
-                <div class="footlinks">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="./booking.html">Register</a></li>
-                        <li><a href="./info.html">About Us</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footlinks">
-                    <h4>Connect</h4>
-                    <div class="social">
-                        <a href="https://www.instagram.com/r.parth._06/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://www.linkedin.com/in/rajput-parth-a90a53328/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://x.com/Rajputparth06" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.facebook.com/parth.krishna.904" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://github.com/rparth006" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="end">
-            <p></p>
-        </div>
-    </section>
- <SCRIPT type="text/javascript">
-        function JavaBlink() {
-           var blinks = document.getElementsByTagName('JavaBlink');
-           for (var i = blinks.length - 1; i >= 0; i--) {
-              var s = blinks[i];
-              s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-           }
-           window.setTimeout(JavaBlink, 500);
-        }
-        if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
-        else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
-        else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
-        else window.onload = JavaBlink;
-      </SCRIPT>
-</body>
-
 </html>
