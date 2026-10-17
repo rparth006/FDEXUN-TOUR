@@ -1,0 +1,131 @@
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 18px 10px;
+    background: rgba(12, 13, 15, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .regional-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    min-height: 72px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .hero {
+    min-height: unset;
+  }
+
+  .hero-content {
+    min-height: 640px;
+    padding: 48px 0 54px;
+  }
+
+  .search-card .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #form-status {
+    grid-column: auto;
+  }
+
+  .card-grid,
+  .package-grid,
+  .location-grid,
+  .review-grid,
+  .stats-grid,
+  .regional-grid,
+  .faq-grid,
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-filter-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .mobile-filter-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .filter-panel {
+    display: none;
+  }
+
+  .filter-panel.open {
+    display: block;
+  }
+
+  .search-field {
+    min-width: 0;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

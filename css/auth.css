@@ -1,0 +1,71 @@
+.auth-shell {
+  background: linear-gradient(180deg, rgba(10,11,13,1), rgba(16,17,19,1));
+}
+
+.auth-layout {
+  display: grid;
+  place-items: center;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.auth-brand-mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+.auth-brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.auth-brand-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.auth-panel {
+  background: linear-gradient(180deg, rgba(22,24,27,0.96), rgba(16,18,20,0.96));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.35);
+}
+
+.auth-panel .field {
+  margin-bottom: 8px;
+}
+
+.auth-panel .btn {
+  margin-top: 8px;
+}
+
+.auth-message {
+  min-height: 22px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.auth-message.success {
+  color: var(--green);
+}
+
+.auth-message.error {
+  color: #d63a3a;
+}
